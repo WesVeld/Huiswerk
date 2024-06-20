@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    transition: background-color 0.5s, box-shadow 0.5s;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+#jaButton:hover {
+    background-color: darkred;
+}
+
+#neeButton:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
